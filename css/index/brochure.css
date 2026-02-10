@@ -1,0 +1,110 @@
+/* Brochure Section Styles */
+.brochure-section {
+    padding: 80px 0;
+    background: linear-gradient(135deg, var(--primary-color) 0%, #00337d 100%);
+    color: var(--white);
+    position: relative;
+    overflow: hidden;
+}
+
+/* Decorative Background element */
+.brochure-section::after {
+    content: '';
+    position: absolute;
+    top: -50%;
+    right: -10%;
+    width: 600px;
+    height: 600px;
+    background: rgba(255, 255, 255, 0.03);
+    border-radius: 50%;
+    pointer-events: none;
+}
+
+.brochure-container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.brochure-content {
+    flex: 1;
+}
+
+.brochure-content h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+    line-height: 1.2;
+}
+
+.brochure-content p {
+    font-size: 1.1rem;
+    opacity: 0.9;
+    max-width: 600px;
+    line-height: 1.6;
+}
+
+.brochure-action {
+    flex-shrink: 0;
+}
+
+/* Download Button */
+.download-btn-premium {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    padding: 18px 40px;
+    background-color: var(--white);
+    color: var(--primary-color);
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: 700;
+    border-radius: 50px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+}
+
+.download-btn-premium i {
+    font-size: 1.2rem;
+}
+
+.download-btn-premium:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3);
+    background-color: #f8f9fa;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+    .brochure-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .brochure-content p {
+        margin: 0 auto;
+    }
+
+    .brochure-content h2 {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .brochure-section {
+        padding: 60px 0;
+    }
+
+    .brochure-content h2 {
+        font-size: 1.8rem;
+    }
+
+    .download-btn-premium {
+        padding: 15px 30px;
+        font-size: 1rem;
+    }
+}
