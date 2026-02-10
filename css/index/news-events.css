@@ -1,0 +1,308 @@
+/* News & Events Section Styles */
+.news-section {
+    padding: 50px 0;
+    background-color: var(--bg-light);
+    /* Use global light bg */
+}
+
+.news-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.news-header {
+    text-align: center;
+    margin-bottom: 60px;
+    position: relative;
+}
+
+.news-header::before {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 4px;
+    background-color: #c5a059;
+    /* Gold accent */
+    margin: 0 auto 20px;
+}
+
+.news-title {
+    font-size: 3rem;
+    color: var(--text-dark);
+    font-weight: 800;
+    margin-bottom: 15px;
+}
+
+.news-subtitle {
+    color: var(--text-dim);
+    font-size: 1.1rem;
+}
+
+.news-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /* Equal width columns */
+    gap: 40px;
+}
+
+/* Section Headings (Latest News / Upcoming Events) */
+.section-heading {
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: var(--text-dark);
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.section-heading i {
+    color: var(--primary-color);
+    /* Changed from gold to primary blue */
+}
+
+/* View More styling */
+/* View More styling */
+.view-more-container {
+    /* Margin handled by flex gap */
+    text-align: right;
+}
+
+.view-more-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    color: var(--primary-color);
+    font-weight: 600;
+    text-decoration: none;
+    border: 1px solid var(--primary-color);
+    border-radius: 6px;
+    transition: all 0.3s ease;
+    font-size: 0.9rem;
+}
+
+.view-more-btn:hover {
+    background-color: var(--primary-color);
+    color: var(--white);
+}
+
+/* Latest News Column */
+/* Columns Layout */
+.news-column,
+.events-column {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+/* Remove margins in favor of flex gap for perfect alignment */
+.news-column .section-heading,
+.events-column .section-heading {
+    margin-bottom: 0;
+}
+
+.view-more-container {
+    margin-top: 0;
+    /* Use flex gap instead */
+    text-align: right;
+}
+
+.news-card {
+    background: var(--white);
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    border-radius: 12px;
+    padding: 30px;
+    position: relative;
+    box-shadow: var(--shadow-sm);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Removed hover effect for smooth scrolling */
+
+.news-card-title {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: var(--text-dark);
+    margin-bottom: 15px;
+}
+
+.news-card-text {
+    font-size: 0.95rem;
+    color: var(--text-dim);
+    line-height: 1.6;
+}
+
+/* Date Badge hanging off the card */
+.date-badge {
+    position: absolute;
+    bottom: -15px;
+    left: 30px;
+    background-color: var(--primary-color);
+    color: var(--white);
+    padding: 5px 15px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 74, 173, 0.3);
+    /* Match primary shadow */
+    font-weight: 700;
+    min-width: 60px;
+}
+
+.date-badge span {
+    display: block;
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    opacity: 0.8;
+}
+
+.date-badge strong {
+    display: block;
+    font-size: 1.2rem;
+    line-height: 1;
+}
+
+/* Upcoming Events Column */
+.events-wrapper {
+    background-color: #f2f4f8;
+    /* Slightly darker than bg-light for contrast */
+    padding: 30px;
+    border-radius: 20px;
+    border: 1px solid rgba(0, 0, 0, 0.03);
+}
+
+.event-item {
+    display: flex;
+    gap: 20px;
+    padding-bottom: 25px;
+    margin-bottom: 25px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.event-item:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+
+.event-date-box {
+    background: var(--white);
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    border-radius: 12px;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    box-shadow: var(--shadow-sm);
+}
+
+.event-date-num {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: var(--primary-color);
+    line-height: 1;
+}
+
+.event-date-month {
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    color: var(--text-dim);
+    font-weight: 600;
+}
+
+.event-content h4 {
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--text-dark);
+    margin-bottom: 5px;
+}
+
+.event-content p {
+    font-size: 0.9rem;
+    color: var(--text-dim);
+}
+
+/* Scrolling Window Logic */
+.scrolling-window {
+    height: 450px;
+    /* Fixed equal height for both */
+    overflow: hidden;
+    position: relative;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    /* Subtle border for definition */
+    border-radius: 12px;
+    background: var(--bg-light);
+    /* Ensure background matches section or white */
+    padding: 10px;
+    box-sizing: border-box;
+    /* Ensure padding doesn't add to height */
+    /* Internal padding */
+}
+
+/* Use white background for the scrolling window to match cards style */
+.news-scroll-window {
+    background: transparent;
+    /* News cards have their own bg */
+    border: none;
+    /* Remove border for news area */
+    padding: 0;
+}
+
+.events-scroll-window {
+    background: #f2f4f8;
+    /* Match wrapper bg */
+    border: 1px solid rgba(0, 0, 0, 0.03);
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.scroll-content {
+    animation: scrollUp 25s linear infinite;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    /* Match spacing */
+}
+
+.news-column .scroll-content {
+    gap: 30px;
+}
+
+.events-column .scroll-content {
+    gap: 0;
+    /* Events have their own spacing/borders */
+}
+
+/* Hover to Pause removed */
+
+@keyframes scrollUp {
+    0% {
+        transform: translateY(0);
+        /* Start visible */
+    }
+
+    100% {
+        transform: translateY(-50%);
+        /* Scroll up half way (one set of content) */
+    }
+}
+
+/* Make sure container doesn't overflow */
+.events-wrapper {
+    /* Remove old wrapper styles since we use scrolling window now */
+    background: transparent;
+    border: none;
+    padding: 0;
+}
+
+/* Duplicating content logic handled in HTML? 
+   To make it smooth, standard practice is:
+   Start at 0, scroll to -50% (if content duplicated).
+   For simple bottom-to-top, -100% leaves blank space. 
+   Creating a 'marquee-container' style animation usually requires duplicating elements.
+   I will set animation to match content height roughly.
+*/
+
+/* Animation Loop */

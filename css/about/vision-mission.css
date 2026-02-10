@@ -1,0 +1,40 @@
+.vision-mission-section {
+    padding: 80px 0;
+}
+
+.vision-box,
+.mission-box {
+    background-color: var(--white);
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: var(--shadow-md);
+    margin-bottom: 40px;
+    border-top: 5px solid var(--primary-color);
+}
+
+.vision-box h2,
+.mission-box h2 {
+    color: var(--primary-color);
+    margin-bottom: 20px;
+    font-size: 2rem;
+}
+
+.mission-list {
+    list-style: none;
+}
+
+.mission-list li {
+    padding: 10px 0;
+    padding-left: 30px;
+    position: relative;
+    font-size: 1.1rem;
+}
+
+.mission-list li::before {
+    content: '\f00c';
+    font-family: 'Font Awesome 6 Free';
+    font-weight: 900;
+    position: absolute;
+    left: 0;
+    color: var(--primary-color);
+}

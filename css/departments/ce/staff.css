@@ -1,0 +1,80 @@
+.staff-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 40px;
+    padding: 20px 0;
+}
+
+.staff-card {
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.06);
+    overflow: hidden;
+    padding: 30px;
+    border-top: 5px solid #2d3748;
+}
+
+.staff-header {
+    display: flex;
+    gap: 25px;
+    margin-bottom: 25px;
+}
+
+.staff-img {
+    width: 120px;
+    height: 150px;
+    background: #f0f0f0;
+    border-radius: 8px;
+    overflow: hidden;
+    border: 1px solid #ddd;
+}
+
+.staff-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.staff-basic-info h3 {
+    color: #2d3748;
+    font-size: 1.6rem;
+    margin-bottom: 5px;
+}
+
+.staff-basic-info .designation {
+    color: #666;
+    font-weight: 600;
+    margin-bottom: 12px;
+}
+
+.staff-contact {
+    font-size: 0.9rem;
+    color: #555;
+    background: #f8fafc;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+.staff-contact p {
+    margin-bottom: 5px;
+}
+
+.staff-detail-section {
+    margin-top: 25px;
+}
+
+.staff-detail-section h4 {
+    color: #2d3748;
+    border-bottom: 2px solid #f0f0f0;
+    padding-bottom: 8px;
+    margin-bottom: 12px;
+    font-size: 1.1rem;
+}
+
+@media (max-width: 600px) {
+    .staff-header {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+}

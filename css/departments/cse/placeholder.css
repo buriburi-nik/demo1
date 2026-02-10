@@ -1,0 +1,28 @@
+.coming-soon-container {
+    text-align: center;
+    padding: 100px 20px;
+    background: #fdfdfd;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.03);
+    margin: 40px auto;
+    max-width: 800px;
+    border: 1px dashed #ccc;
+}
+
+.coming-soon-container i {
+    font-size: 4rem;
+    color: #1a4a8e;
+    margin-bottom: 20px;
+    opacity: 0.5;
+}
+
+.coming-soon-container h3 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.coming-soon-container p {
+    color: #777;
+    font-size: 1.1rem;
+}

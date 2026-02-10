@@ -1,0 +1,571 @@
+﻿Department of Computer Science and Engineering
+
+
+* Department Profile
+* Laboratories
+   * DBMS Lab
+   * Computer Programming Lab
+   * Operating Systems Lab
+   * Computer Networks Lab
+   * Web Technologies Lab
+   * Data Structures Lab
+* Faculties
+* Staff
+* Students
+
+
+Department Profile
+The Computer Science & Engineering (CSE) Department at Govt. Polytechnic College, Ziro has been established to produce competent, skilled, and ethically responsible diploma engineers capable of addressing the challenges of the rapidly evolving digital and real-world problems. The department focuses on providing strong foundations in computing principles along with hands-on practical training, in line with AICTE norms and the National Education Policy (NEP) 2020.
+The CSE program provides strong foundations in programming, data structures, databases, computer networks, operating systems, web technologies and ever emerging technologies, supported by well-equipped laboratories which prepares students for future industry needs and local technological applications.
+The department promotes multidisciplinary learning, internships, entrepreneurship, and lifelong learning, motivating students to solve local and societal problems using technology. Special focus is given to digital literacy, problem-solving skills, teamwork, and ethical values, making graduates suitable for employment, self-employment, for further professional endeavors.
+Overall, the CSE Department at Polytechnic, Ziro aims to serve as a dynamic hub of technical skill development and innovation, contributing to regional growth, digital empowerment, and national development.
+
+
+Vision:
+To emerge as a center of excellence in Computer Science and Engineering producing competent and ethical professionals, innovator, entrepreneurs ready to serve the needs of society and excel in a dynamic technological world, promoting sustainable environment and contributing sustainable economy.
+Mission:
+* Deliver high-quality technical education that builds solid foundations in computer science principles, problem-solving, and practical skills.
+* Promote innovation and research through hands-on projects, collaborations, and exposure to emerging technologies like AI, ML, IoT, and cybersecurity.
+* Foster industry readiness by embedding industry practices, internships, live projects, and soft skills development into the curriculum.
+* Encourage professional and ethical growth by cultivating responsibility, teamwork, communication skills, and a commitment to lifelong learning.
+* Engage with the community and industry partners to address real-world problems and contribute to regional and national development.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Laboratories
+
+
+Data Structures Lab
+	
+
+	This laboratory is intended to practice whatever is taught in theory class of ‘Data Structures’, ‘Algorithms’ and is an extension of previous course on ‘Computer Programming’. Students work on various problems listed in the text books and given by the teacher. This Lab course requires a good coordination between theory course in Data Structures and Algorithms. 
+
+
+Some of the topics that are covered in lab are listed below:
+* Search operation in a given list of integers using binary search technique
+* Write a program to implement insertion sorting for a given random data
+* Write a program to implement bubble sorting for a given random data
+* Write a program to implement quick sorting for a given random data
+* Write a program to implement selection sorting for a given random data
+	Operating Systems Lab
+	
+
+	This laboratory is intended to practice and do experiment on concepts taught in theory class of ‘Operating Systems’ and gain insight into functioning of the Operating Systems.
+
+
+Some of the topics that are covered in lab are listed below:
+* Implement two-way process communication using pipes
+* Implement message queue form of IPC
+* Implement shared memory and semaphore form of IPC
+* Simulate the CPU scheduling algorithms - Round Robin, SJF, FCFS, priority
+* Simulate Bankers algorithm for Deadlock Avoidance and Prevention
+	DBMS Lab
+	
+
+	This laboratory is intended to practice the concepts of the course ‘Introduction to DBMS’.
+The students need to develop the case studies and apply all relevant concepts learnt in theory class
+as the course progress, identify activities/operations that can be performed on the database. The students shall also use concepts learnt in the course on Software Engineering/SSAD.
+
+
+Some of the topics/case studies that are covered in lab are listed below:
+* Case Study-1: Employee database
+* Case Study-2: Visitor Management database
+* Case Study-3: Students Academic database
+* Case Study-4: Inventory Management System database
+* Case study-5: Bank Operations database
+	Computer Networks Lab
+	
+
+	This laboratory is intended to practice concepts of ‘Computer Networks’ and apply for real-life problems.
+
+
+Some of the topics/case studies that are covered in lab are listed below:
+
+
+* Configuring computing devices (PC, Laptop, Mobile, etc.) for network, exploring different
+* options and their impact – IP address, gateway, DNS, security options, etc.
+* Showing various networking devices – NICs, Hub, Switch, Router, Wi-Fi access point, etc.
+* Network simulation tool (e.g. Cisco Packet Tracer)
+* Setting up a small wired LAN in the Lab
+* Setting up a small wireless LAN in the Lab
+	Web Technologies Lab
+	
+
+	This Lab course is intended to practice whatever is taught in theory class of ‘Web Technologies’ and apply for real-life problems.
+
+
+Some of the topics/case studies that are covered in lab are listed below:
+* Coding Server Client Programs
+* Developing Web Application using HTML, JavaScript
+* Developing Advanced Web Application Programs using CSS
+* Practicing PHP: Basics
+* Practicing PHP: Web Application Development
+* Developing a fully functional Web Service Application using all the technologies learned in this course.
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Faculties:
+
+
+Faculty Profile: 
+ C:\Users\HP\Desktop\passphoto.jfif 
+
+	Name: 
+	Ngilyang Pumbo
+	Designation:
+	Lecturer (Sel Gr-I) cum HoD (I/c)
+	Specialization:
+	Image Processing, Networking, AI
+	Date of Joining: 
+	27th Oct’2006
+	Contact details
+	Email:ngspumbo@gmail.com
+	Mobile:9612402046
+	
+
+Educational Qualification:
+Sr. No.
+	Degree
+	Subject/Specialization
+	University
+	Year
+	1
+	Ph D (Pursuing)
+	AI & ML
+	NIT, Jote
+	Since Jan’2024
+	2
+	M. Tech
+	Image Processing
+	Assam Downtown
+	2020
+	3
+	BE
+	CS & Engg
+	Kuvempu
+	2003
+	
+
+Teaching-Learning Engagement:
+Sr. No.
+	Course Code
+	Course Title 
+	Department 
+	Year 
+	Semester
+	1
+	ES-102
+	Introduction to IT Systems
+	CE/CSE/EE
+	1nd
+	II
+	2
+	G-206A/B
+	Programming in C
+	CSE
+	2nd
+	III
+	3
+	Ex-504
+	Microprocessor
+	EEE/CSE
+	3rd
+	V
+	
+
+Professional Background:
+Sr. No.
+	Designation
+	From
+	To
+	Organization
+	1
+	Lecturer
+	2006
+	2015
+	RGGP
+	2
+	Lecturer (Sr. Scale)
+	2015
+	2020
+	GPC Pasighat
+	3
+	Lecturer (Sel. Gr-I)
+	2020
+	Till date
+	GPC Pasighat/Ziro
+	
+
+Administrative Experience:
+Sr. No.
+	Admin Experience 
+	From
+	To
+	Organization
+	1
+	HOD I/c (CSE)
+	2014
+	2015
+	RGGP, Itanagar
+	2
+	Principal (I/C) 
+	2015
+	2017
+	GPC, Laying
+	3
+	HOD I/c (CSE)
+	2017
+	2025
+	GPC Pasighat
+	4
+	Coordinator
+	
+
+	
+
+	
+
+	
+
+	i. Student  Affairs
+	2007
+	2009
+	RGGP, Itanagar 
+	
+
+	ii. NSS PO
+	2009
+	2011
+	RGGP, Itanagar
+	
+
+	iii. IONs Centre Supdtt
+	2014
+	2016
+	RGGP, Itanagar
+	
+
+	iv. AICTE
+	2015
+	2017
+	GPC, Laying
+	
+
+	v. Exam & Academic
+	2018
+	2022
+	GPC, Pasighat
+	
+
+	vi. IQAC
+	2018
+	2024
+	GPC, Pasighat
+	
+
+	vii. AICTE
+	2018
+	2025
+	GPC, Pasighat
+	
+
+	viii. Chief Warden
+	2017
+	2025
+	GPC, Pasighat
+	
+
+	ix. Student Proctor
+	2017
+	2025
+	GPC, Pasighat
+	
+
+	x. APPSB/APPSCE Asst Centre Supdtt
+	2021
+	2025
+	GPC, Pasighat
+	
+
+FDP/STTP/STC Attended:
+Sr. No.
+	FDP/STTP/STC
+	From 
+	To
+	Sponsored/organized by 
+	1
+	FDP on GEN AI-RAG
+	8/9/2025
+	12/9/2025
+	EXCELR/EDL
+	2
+	FDP on AI & Computer Vision
+	8/9/2025
+	12/9/2025
+	C-DAC, Hyderabad/Ministry of Electronics & IT Govt of India
+	3
+	FDP on Entrepreneurship
+	26/2/24
+	1/3/2024
+	IIE, Lalmati Ghy, Ministry of Skill Development & Entrepreneurship, Govt of India
+	4.
+	Certificate course on Cyber Security & Data Privacy
+	03/06/2024
+	08/06/2024
+	Rashtriya Raksha University
+Ministry of Home Affairs, Govt. of India
+	
+
+Conferences/Seminars Attended:
+Sr. No.
+	Conference/seminar 
+	Date 
+	Organized by 
+	1
+	ICMMRE 2022
+	11 to 12th Feb’2022
+	SMIT, Majitar Sikkim
+	2
+	IC on Academic Excellence through Accreditation
+	15th to 16th May’2025
+	Dr. K.N Modi University, Newai, Rajasthan in association with Deptt of Science & Technology. Govt.  of Rajasthan
+	
+
+Conferences/Seminars/FDP/STTP/STC Organized:
+Sr. No.
+	Conference/seminar FDP/STTP/STC
+	Date 
+	Sponsored by 
+	1
+	STTP on Domestic Electrical Wiring, Computer Networking, CCTV Wiring & Installation
+	22-25th Oct’ 2024
+	Deptt of Higher & Technical Education. Govt. of A.P
+	
+
+Publications Details:
+Sr. No.
+	Title of the paper with DOI
+	Publications in Journals
+	1
+	
+
+	Publications in Conferences
+	1
+	Gem Taka, N. Pumbo, T. D. Das, “Synthesis and Characterization of ZnO, Fe-ZnO & Mg-ZnO Nanoparticles”, AIP Conf. Proc. 2786, 060002 (2023). DOI: 10.1063/5.0145518
+	Publications of Book Chapter etc.
+	
+
+	
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Staff:
+
+
+This page will be updated soon
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Students:
+
+
+This page will be updated soon

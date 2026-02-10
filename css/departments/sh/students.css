@@ -1,0 +1,63 @@
+.student-section {
+    padding: 60px 0;
+}
+
+.table-responsive {
+    overflow-x: auto;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.05);
+    margin-top: 30px;
+}
+
+.student-table {
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 800px;
+}
+
+.student-table th {
+    background: #1a4a8e;
+    color: #fff;
+    padding: 15px;
+    text-align: left;
+    font-weight: 600;
+}
+
+.student-table td {
+    padding: 12px 15px;
+    border-bottom: 1px solid #eee;
+    color: #444;
+}
+
+.student-table tr:hover {
+    background: #f8fafc;
+}
+
+.gender-badge {
+    padding: 4px 10px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+.gender-m {
+    background: #e3f2fd;
+    color: #1a73e8;
+}
+
+.gender-f {
+    background: #fce4ec;
+    color: #d81b60;
+}
+
+.reg-no {
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 600;
+}
+
+@media (max-width: 768px) {
+    .dept-header h2 {
+        font-size: 2rem;
+    }
+}
