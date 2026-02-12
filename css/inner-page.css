@@ -1,0 +1,145 @@
+/* Shared CSS for Internal Pages */
+
+/* Page Hero Section */
+.page-hero {
+    position: relative;
+    width: 100%;
+    /* Keep height moderate, not full screen */
+    min-height: 400px;
+    background: linear-gradient(135deg, var(--primary-color) 0%, #002a70 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: var(--white);
+    overflow: hidden;
+    padding: 80px 20px;
+    margin-bottom: 60px;
+}
+
+/* Decorative Background Element */
+.page-hero::after {
+    content: '';
+    position: absolute;
+    top: -50%;
+    right: -10%;
+    width: 600px;
+    height: 600px;
+    background: rgba(255, 255, 255, 0.03);
+    border-radius: 50%;
+    pointer-events: none;
+}
+
+.page-hero-content {
+    position: relative;
+    z-index: 2;
+    max-width: 800px;
+}
+
+.page-title {
+    font-size: 3.5rem;
+    font-weight: 800;
+    margin-bottom: 20px;
+    line-height: 1.2;
+    letter-spacing: -0.02em;
+}
+
+.breadcrumb {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    font-size: 0.95rem;
+    opacity: 0.8;
+    margin-bottom: 0;
+}
+
+.breadcrumb a {
+    color: var(--white);
+    text-decoration: none;
+    transition: opacity 0.3s ease;
+}
+
+.breadcrumb a:hover {
+    opacity: 1;
+    text-decoration: underline;
+}
+
+.breadcrumb span {
+    opacity: 0.6;
+}
+
+/* Main Content Container */
+.page-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px 80px;
+    /* Bottom padding for breathing room */
+}
+
+/* Section Titles within pages */
+.section-title {
+    font-size: 2.2rem;
+    color: var(--text-dark);
+    font-weight: 800;
+    margin-bottom: 30px;
+    position: relative;
+    display: inline-block;
+}
+
+.section-title::after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 4px;
+    background-color: #c5a059;
+    /* Gold accent */
+    margin-top: 10px;
+    border-radius: 2px;
+}
+
+/* Glass Card Helper */
+.glass-card {
+    background: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+    border-radius: 20px;
+    padding: 40px;
+}
+
+/* Typography Helpers */
+.text-lead {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: var(--text-dark);
+    margin-bottom: 20px;
+    font-weight: 500;
+}
+
+.text-body {
+    font-size: 1rem;
+    line-height: 1.7;
+    color: var(--secondary-color);
+    margin-bottom: 15px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .page-hero {
+        min-height: 300px;
+        padding: 60px 20px;
+    }
+
+    .page-title {
+        font-size: 2.5rem;
+    }
+
+    .section-title {
+        font-size: 1.8rem;
+    }
+
+    .glass-card {
+        padding: 25px;
+    }
+}

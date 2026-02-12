@@ -1,0 +1,180 @@
+/* Administration Page Styles */
+
+/* Org Chart Wrapper for horizontal scroll on small screens */
+.org-chart-wrapper {
+    overflow-x: auto;
+    padding: 20px 0 40px;
+    text-align: center;
+}
+
+/* Base Tree */
+.org-chart ul {
+    padding-top: 20px;
+    position: relative;
+    transition: all 0.5s;
+    white-space: nowrap;
+    display: flex;
+    justify-content: center;
+}
+
+.org-chart li {
+    float: left;
+    text-align: center;
+    list-style-type: none;
+    position: relative;
+    padding: 20px 5px 0 5px;
+    transition: all 0.5s;
+}
+
+/* Connectors */
+.org-chart li::before,
+.org-chart li::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 50%;
+    border-top: 2px solid var(--primary-color);
+    width: 50%;
+    height: 20px;
+}
+
+.org-chart li::after {
+    right: auto;
+    left: 50%;
+    border-left: 2px solid var(--primary-color);
+}
+
+/* Remove connectors from the single root */
+.org-chart li:only-child::after,
+.org-chart li:only-child::before {
+    display: none;
+}
+
+/* Remove space from the top of single children */
+.org-chart li:only-child {
+    padding-top: 0;
+}
+
+/* Remove left connector from first child and right connector from last child */
+.org-chart li:first-child::before,
+.org-chart li:last-child::after {
+    border: 0 none;
+}
+
+/* Adding back the vertical connector to the last nodes */
+.org-chart li:last-child::before {
+    border-right: 2px solid var(--primary-color);
+    border-radius: 0 5px 0 0;
+}
+
+.org-chart li:first-child::after {
+    border-radius: 5px 0 0 0;
+}
+
+/* Downward connector from parent */
+.org-chart ul ul::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    border-left: 2px solid var(--primary-color);
+    width: 0;
+    height: 20px;
+}
+
+/* Node Styles */
+.org-chart .node {
+    display: inline-block;
+    padding: 15px 20px;
+    text-decoration: none;
+    background: var(--white);
+    color: var(--text-dark);
+    border: 2px solid var(--primary-color);
+    border-radius: 8px;
+    font-weight: 700;
+    font-size: 0.95rem;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s;
+    min-width: 180px;
+    position: relative;
+    z-index: 2;
+    white-space: normal;
+    /* Allow text wrap inside box */
+    max-width: 250px;
+}
+
+.org-chart .node:hover {
+    background: var(--primary-color);
+    color: var(--white);
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 74, 173, 0.2);
+}
+
+.org-chart .node:hover span {
+    color: rgba(255, 255, 255, 0.9);
+}
+
+/* Specific Node Level Styles from Image */
+.org-chart .node.top-level {
+    border-color: #0000ff;
+    /* Blue Border */
+    background: #e6e6ff;
+    /* Light Blue BG */
+}
+
+.org-chart .node.mid-level {
+    border-color: #d1b6ff;
+    /* Purple-ish Border */
+    background: #f9f2ff;
+    /* Light Pink/Purple BG */
+}
+
+.org-chart .node.principal {
+    border-color: #ff00ff;
+    /* Magenta Border */
+    background: #ffe6ff;
+    /* Light Magenta BG */
+    font-size: 1.1rem;
+    padding: 20px 30px;
+}
+
+.org-chart .node.leaf {
+    border-color: #8b0000;
+    /* Dark Red Border */
+    background: #ADD8E6;
+    /* Light Blue BG */
+    color: #000;
+}
+
+.org-chart .node.sub-leaf {
+    border-color: #8b0000;
+    /* Dark Red Border */
+    background: #ADD8E6;
+    /* Light Blue BG */
+    font-size: 0.9rem;
+}
+
+/* Text spans */
+.org-chart .node span {
+    display: block;
+    font-weight: 500;
+    font-size: 0.85rem;
+    margin-top: 5px;
+    color: var(--text-dim);
+}
+
+.org-chart .node .role {
+    font-weight: 800;
+    font-size: 1rem;
+    color: inherit;
+    display: block;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .org-chart .node {
+        padding: 10px;
+        min-width: 120px;
+        font-size: 0.85rem;
+    }
+}

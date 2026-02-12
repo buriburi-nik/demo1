@@ -1,0 +1,74 @@
+/* History Page Styles */
+.timeline {
+    position: relative;
+    max-width: 800px;
+    margin: 50px auto 0;
+    padding: 20px 0;
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    width: 2px;
+    height: 100%;
+    background: var(--primary-color);
+    opacity: 0.2;
+}
+
+.timeline-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 40px;
+}
+
+.timeline-item:nth-child(even) {
+    flex-direction: row-reverse;
+}
+
+.year {
+    width: 100px;
+    height: 100px;
+    background: var(--primary-color);
+    color: var(--white);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 800;
+    font-size: 1.2rem;
+    position: relative;
+    z-index: 1;
+    box-shadow: 0 5px 15px rgba(0, 0, 74, 0.2);
+}
+
+.event {
+    width: calc(50% - 70px);
+    background: var(--white);
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+    border: 1px solid rgba(0, 74, 173, 0.05);
+}
+
+@media (max-width: 600px) {
+    .timeline::before {
+        left: 20px;
+    }
+
+    .timeline-item {
+        flex-direction: row !important;
+    }
+
+    .year {
+        width: 60px;
+        height: 60px;
+        font-size: 1rem;
+    }
+
+    .event {
+        width: calc(100% - 90px);
+    }
+}
