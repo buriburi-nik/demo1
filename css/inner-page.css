@@ -1,11 +1,11 @@
-/* Shared CSS for Internal Pages */
+/* Inner Page Common Styles (Hero, Layout, etc) */
 
-/* Page Hero Section */
+/* Page Hero */
 .page-hero {
     position: relative;
     width: 100%;
     /* Keep height moderate, not full screen */
-    min-height: 400px;
+    min-height: 300px;
     background: linear-gradient(135deg, var(--primary-color) 0%, #002a70 100%);
     display: flex;
     align-items: center;
@@ -30,116 +30,72 @@
     pointer-events: none;
 }
 
-.page-hero-content {
-    position: relative;
-    z-index: 2;
-    max-width: 800px;
+.page-hero-content h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 15px;
 }
 
-.page-title {
-    font-size: 3.5rem;
-    font-weight: 800;
-    margin-bottom: 20px;
-    line-height: 1.2;
-    letter-spacing: -0.02em;
+.hero-subtitle {
+    font-size: 1.2rem;
+    opacity: 0.9;
+    max-width: 700px;
+    margin: 0 auto;
 }
 
-.breadcrumb {
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-    font-size: 0.95rem;
-    opacity: 0.8;
-    margin-bottom: 0;
-}
-
-.breadcrumb a {
-    color: var(--white);
-    text-decoration: none;
-    transition: opacity 0.3s ease;
-}
-
-.breadcrumb a:hover {
-    opacity: 1;
-    text-decoration: underline;
-}
-
-.breadcrumb span {
-    opacity: 0.6;
-}
-
-/* Main Content Container */
 .page-container {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px 80px;
-    /* Bottom padding for breathing room */
 }
 
-/* Section Titles within pages */
-.section-title {
-    font-size: 2.2rem;
-    color: var(--text-dark);
-    font-weight: 800;
-    margin-bottom: 30px;
-    position: relative;
-    display: inline-block;
-}
-
-.section-title::after {
-    content: '';
-    display: block;
-    width: 60px;
-    height: 4px;
-    background-color: #c5a059;
-    /* Gold accent */
-    margin-top: 10px;
-    border-radius: 2px;
-}
-
-/* Glass Card Helper */
+/* Glass Card Container */
 .glass-card {
-    background: rgba(255, 255, 255, 0.7);
+    background: rgba(255, 255, 255, 0.9);
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
-    border: 1px solid rgba(255, 255, 255, 0.5);
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
     border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.05);
     padding: 40px;
+    width: 100%;
 }
 
-/* Typography Helpers */
-.text-lead {
-    font-size: 1.2rem;
-    line-height: 1.6;
-    color: var(--text-dark);
-    margin-bottom: 20px;
-    font-weight: 500;
+/* Common Section Title */
+.section-title {
+    font-size: 2rem;
+    color: var(--primary-color);
+    margin-bottom: 30px;
+    padding-bottom: 15px;
+    border-bottom: 2px solid #e0e0e0;
 }
 
-.text-body {
-    font-size: 1rem;
-    line-height: 1.7;
-    color: var(--secondary-color);
-    margin-bottom: 15px;
+/* Button Styles */
+.download-btn-premium {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    color: var(--white);
+    padding: 12px 25px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0, 74, 173, 0.3);
 }
 
-/* Responsive */
+.download-btn-premium:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(0, 74, 173, 0.4);
+}
+
 @media (max-width: 768px) {
-    .page-hero {
-        min-height: 300px;
-        padding: 60px 20px;
-    }
-
-    .page-title {
-        font-size: 2.5rem;
-    }
-
-    .section-title {
-        font-size: 1.8rem;
+    .page-hero-content h1 {
+        font-size: 2rem;
     }
 
     .glass-card {
-        padding: 25px;
+        padding: 20px;
     }
 }

@@ -1,0 +1,72 @@
+/* Time Table Styles */
+
+.tt-filters {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    background: #f8f9fa;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 30px;
+}
+
+.tt-select {
+    padding: 10px 15px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 0.95rem;
+    color: var(--text-dark);
+    flex: 1;
+    min-width: 200px;
+}
+
+.tt-btn {
+    background: var(--primary-color);
+    color: var(--white);
+    border: none;
+    padding: 10px 25px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background 0.3s;
+}
+
+.tt-btn:hover {
+    background: #003080;
+}
+
+.tt-display {
+    min-height: 300px;
+    border: 2px dashed #e0e0e0;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.tt-placeholder {
+    text-align: center;
+    color: var(--text-dim);
+}
+
+.tt-placeholder i {
+    font-size: 3rem;
+    margin-bottom: 15px;
+    color: #cbd5e1;
+}
+
+.tt-placeholder p {
+    margin-bottom: 20px;
+    font-size: 1.1rem;
+}
+
+@media (max-width: 768px) {
+    .tt-filters {
+        flex-direction: column;
+    }
+
+    .tt-select,
+    .tt-btn {
+        width: 100%;
+    }
+}

@@ -1,0 +1,76 @@
+/* Syllabus Page Styles */
+
+.department-group {
+    margin-bottom: 40px;
+}
+
+.sub-title {
+    font-size: 1.5rem;
+    color: var(--primary-color);
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #f0f0f0;
+}
+
+.download-list {
+    list-style: none;
+    padding: 0;
+}
+
+.download-list li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    background: var(--white);
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    border-radius: 8px;
+    margin-bottom: 10px;
+    transition: background 0.2s;
+}
+
+.download-list li:hover {
+    background: #f8f9fa;
+}
+
+.file-info {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    font-weight: 500;
+    color: var(--text-dark);
+}
+
+.file-info i {
+    color: #e74c3c;
+    /* PDF red color */
+    font-size: 1.5rem;
+}
+
+.download-link {
+    color: var(--primary-color);
+    text-decoration: none;
+    font-weight: 600;
+    padding: 8px 16px;
+    border: 1px solid var(--primary-color);
+    border-radius: 6px;
+    transition: all 0.3s;
+}
+
+.download-link:hover {
+    background: var(--primary-color);
+    color: var(--white);
+}
+
+@media (max-width: 600px) {
+    .download-list li {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+    }
+
+    .download-link {
+        width: 100%;
+        text-align: center;
+    }
+}
