@@ -1,0 +1,99 @@
+/* CSS for Exam Downloads Page */
+
+/* Downloads Container */
+.downloads-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.download-group {
+    margin-bottom: 3rem;
+}
+
+.download-group:last-child {
+    margin-bottom: 0;
+}
+
+.download-group h2 {
+    color: var(--primary-color);
+    margin-bottom: 1.5rem;
+    font-size: 1.5rem;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.05);
+    padding-bottom: 0.5rem;
+    display: inline-block;
+}
+
+/* Download Grid */
+.download-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 1.5rem;
+}
+
+.download-card {
+    background: rgba(255, 255, 255, 0.5);
+    border: 1px solid rgba(255, 255, 255, 0.6);
+    border-radius: 12px;
+    padding: 1.5rem;
+    display: flex;
+    align-items: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.download-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+    background: rgba(255, 255, 255, 0.7);
+}
+
+.file-icon {
+    font-size: 2.5rem;
+    color: var(--primary-color);
+    margin-right: 1.5rem;
+    opacity: 0.8;
+}
+
+.file-icon .fa-file-pdf {
+    color: #e50914;
+}
+
+.file-icon .fa-file-word {
+    color: #2b579a;
+}
+
+.file-icon .fa-file-excel {
+    color: #217346;
+}
+
+.file-info h3 {
+    margin: 0 0 0.3rem;
+    font-size: 1.1rem;
+    color: var(--text-color);
+}
+
+.file-meta {
+    font-size: 0.8rem;
+    color: #777;
+    margin-bottom: 0.8rem;
+}
+
+.btn-download-sm {
+    display: inline-block;
+    padding: 6px 16px;
+    background: rgba(26, 74, 142, 0.1);
+    color: var(--primary-color);
+    text-decoration: none;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.btn-download-sm:hover {
+    background: var(--primary-color);
+    color: #fff;
+}
+
+.btn-download-sm i {
+    margin-left: 5px;
+}

@@ -1,0 +1,99 @@
+/* CSS for Exam Rules Page */
+
+/* Rules Container */
+.rules-container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.rules-section {
+    margin-bottom: 3rem;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.rules-section:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.rules-section h2 {
+    color: var(--primary-color);
+    margin-bottom: 1.5rem;
+    font-size: 1.5rem;
+    position: relative;
+    padding-left: 15px;
+}
+
+.rules-section h2::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 5px;
+    bottom: 5px;
+    width: 4px;
+    background: var(--accent-color);
+    border-radius: 2px;
+}
+
+.rules-section p {
+    color: #444;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+}
+
+/* Rules List */
+.rules-list {
+    list-style: none;
+    padding: 0;
+}
+
+.rules-list li {
+    position: relative;
+    padding-left: 2rem;
+    margin-bottom: 1rem;
+    color: #444;
+    line-height: 1.5;
+}
+
+.rules-list li i {
+    position: absolute;
+    left: 0;
+    top: 4px;
+    color: #28a745;
+    /* Green for checkmark */
+}
+
+/* Download Section */
+.download-section {
+    margin-top: 2rem;
+    text-align: center;
+}
+
+.download-section h3 {
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+}
+
+.btn-download {
+    display: inline-block;
+    padding: 12px 24px;
+    background: var(--primary-color);
+    color: #fff;
+    text-decoration: none;
+    border-radius: 50px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.btn-download:hover {
+    background: var(--secondary-color);
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.btn-download i {
+    margin-right: 8px;
+}
