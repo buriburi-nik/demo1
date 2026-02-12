@@ -1,0 +1,30 @@
+/* Students CSS - Placeholder styling */
+
+.coming-soon-container {
+    text-align: center;
+    padding: 60px 20px;
+    background: rgba(255, 255, 255, 0.4);
+    border-radius: 12px;
+    border: 1px dashed rgba(26, 74, 142, 0.3);
+}
+
+.coming-soon-container i {
+    font-size: 4rem;
+    color: var(--primary-color);
+    margin-bottom: 20px;
+    opacity: 0.7;
+}
+
+.coming-soon-container h3 {
+    font-size: 2rem;
+    color: var(--primary-color);
+    margin-bottom: 15px;
+}
+
+.coming-soon-container p {
+    color: #666;
+    font-size: 1.1rem;
+    max-width: 600px;
+    margin: 0 auto;
+    line-height: 1.6;
+}

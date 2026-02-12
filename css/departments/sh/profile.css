@@ -1,76 +1,104 @@
-.dept-container {
-    padding: 60px 0;
-    max-width: 1200px;
-    margin: 0 auto;
+/* CSS for Science & Humanities Profile Page */
+
+/* Glass Card */
+.glass-card {
+    background: rgba(255, 255, 255, 0.65);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.15);
+    border-radius: 24px;
+    padding: 3rem;
+    margin-bottom: 2rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
+.glass-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 40px 0 rgba(31, 38, 135, 0.2);
+}
+
+/* Department Header */
 .dept-header {
     text-align: center;
-    margin-bottom: 40px;
+    margin-bottom: 3rem;
+    position: relative;
 }
 
 .dept-header h2 {
-    color: #1a4a8e;
+    color: var(--primary-color);
     font-size: 2.5rem;
-    margin-bottom: 10px;
+    font-weight: 800;
+    margin-bottom: 0.5rem;
+    background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: inline-block;
 }
 
+.dept-header p {
+    color: var(--text-color);
+    font-size: 1.2rem;
+    opacity: 0.8;
+}
+
+/* Department Content */
 .dept-content {
     display: flex;
-    gap: 40px;
-    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 3rem;
+    margin-bottom: 3rem;
+    align-items: center;
 }
 
 .dept-text {
     flex: 1;
+    font-size: 1.1rem;
     line-height: 1.8;
+    color: var(--text-color);
+    text-align: justify;
 }
 
-.dept-image {
-    flex: 1;
-}
-
-.dept-image img {
-    width: 100%;
-    border-radius: 10px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-}
-
+/* Teaching Methodology Box */
 .methodology-box {
-    margin-top: 40px;
-    padding: 30px;
-    background: #f0f4f8;
-    border-radius: 10px;
-    border-left: 5px solid #1a4a8e;
+    background: rgba(255, 255, 255, 0.5);
+    border-left: 5px solid var(--primary-color);
+    padding: 2rem;
+    border-radius: 12px;
+    margin-top: 2rem;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease;
+}
+
+.methodology-box:hover {
+    transform: translateX(5px);
 }
 
 .methodology-box h3 {
-    color: #1a4a8e;
-    margin-bottom: 15px;
+    color: var(--primary-color);
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    font-weight: 700;
 }
 
-.facility-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 25px;
-    margin-top: 30px;
+.methodology-box p {
+    font-size: 1.05rem;
+    line-height: 1.7;
+    color: var(--text-color);
 }
 
-.facility-card {
-    background: #fff;
-    padding: 25px;
-    border-radius: 8px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
-    text-align: center;
-}
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .glass-card {
+        padding: 2rem;
+    }
 
-.facility-card i {
-    font-size: 2.5rem;
-    color: #1a4a8e;
-    margin-bottom: 15px;
-}
+    .dept-header h2 {
+        font-size: 2rem;
+    }
 
-.facility-card h4 {
-    color: #333;
-    margin-bottom: 10px;
+    .dept-content {
+        flex-direction: column;
+        gap: 2rem;
+    }
 }

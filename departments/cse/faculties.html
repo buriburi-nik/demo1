@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CSE Faculty - Government Polytechnic College Ziro</title>
     <link rel="stylesheet" href="../../styles.css">
+    <link rel="stylesheet" href="../../css/inner-page.css">
     <link rel="stylesheet" href="../../css/departments/cse/faculties.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
@@ -17,8 +18,8 @@
         <div class="top-bar">
             <div class="container top-bar-content">
                 <nav class="top-nav">
-                    <a href="#">Academic Calendar</a>
-                    <a href="#">Class Timetable</a>
+                    <a href="../../academics/academic-calendar.html">Academic Calendar</a>
+                    <a href="../../academics/time-table.html">Class Timetable</a>
                     <a href="#">Institute Report</a>
                     <a href="#">Online Payment</a>
                     <a href="#">RTI</a>
@@ -76,30 +77,30 @@
                             <li><a href="../../about/about-us.html">About Us</a></li>
                             <li><a href="../../about/vision-mission.html">Vision & Mission</a></li>
                             <li><a href="../../about/principal-message.html">Principal's Message</a></li>
-                            <li><a href="#">Administration</a></li>
-                            <li><a href="#">History</a></li>
+                            <li><a href="../../about/administration.html">Administration</a></li>
+                            <li><a href="../../about/history.html">History</a></li>
                         </ul>
                     </li>
 
                     <li class="dropdown">
                         <a href="#">Academics <i class="fas fa-chevron-down"></i></a>
                         <ul class="dropdown-menu">
-                            <li><a href="#">Courses Offered</a></li>
-                            <li><a href="#">Academic Calendar</a></li>
-                            <li><a href="#">Syllabus</a></li>
-                            <li><a href="#">Faculty</a></li>
-                            <li><a href="#">Time Table</a></li>
+                            <li><a href="../../academics/courses-offered.html">Courses Offered</a></li>
+                            <li><a href="../../academics/academic-calendar.html">Academic Calendar</a></li>
+                            <li><a href="../../academics/syllabus.html">Syllabus</a></li>
+                            <li><a href="../../academics/faculty.html">Faculty</a></li>
+                            <li><a href="../../academics/time-table.html">Time Table</a></li>
                         </ul>
                     </li>
 
                     <li class="dropdown">
                         <a href="#">Admissions <i class="fas fa-chevron-down"></i></a>
                         <ul class="dropdown-menu">
-                            <li><a href="#">Admission Process</a></li>
-                            <li><a href="#">Eligibility</a></li>
-                            <li><a href="#">Fee Structure</a></li>
-                            <li><a href="#">Online Admission</a></li>
-                            <li><a href="#">Prospectus (PDF)</a></li>
+                            <li><a href="../../admissions/admission-process.html">Admission Process</a></li>
+                            <li><a href="../../admissions/eligibility.html">Eligibility</a></li>
+                            <li><a href="../../admissions/fee-structure.html">Fee Structure</a></li>
+                            <li><a href="../../admissions/online-admission.html">Online Admission</a></li>
+                            <li><a href="../../admissions/prospectus.html">Prospectus (PDF)</a></li>
                         </ul>
                     </li>
 
@@ -195,167 +196,183 @@
         </nav>
     </header>
 
-    <main class="container" style="padding: 60px 0;">
-        <div class="dept-header" style="text-align: center; margin-bottom: 40px;">
-            <h2 style="color: #1a4a8e; font-size: 2.5rem;">Our Faculty</h2>
-            <p>Computer Science and Engineering</p>
-        </div>
+    <main>
+        <!-- Page Hero -->
+        <section class="page-hero">
+            <div class="page-hero-content">
+                <h1 class="page-title">Faculty Members</h1>
+                <p class="hero-subtitle">Computer Science and Engineering</p>
+            </div>
+        </section>
 
-        <div class="faculty-grid">
-            <div class="faculty-card">
-                <div class="faculty-header">
-                    <div class="faculty-img">
-                        <img src="../../images/cse faculty.jpg" alt="Ngilyang Pumbo"
-                            style="width: 100%; height: 100%; object-fit: cover;">
-                    </div>
-                    <div class="faculty-basic-info">
-                        <h3>Ngilyang Pumbo</h3>
-                        <p class="designation">Lecturer (Sel Gr-I) cum HoD (I/c)</p>
-                        <p style="font-size: 0.9rem; color: #666; margin-bottom: 10px;"><strong>Specialization:</strong>
-                            Image Processing, Networking, AI</p>
-                        <div class="faculty-contact">
-                            <p><i class="fas fa-envelope"></i> ngspumbo@gmail.com</p>
-                            <p><i class="fas fa-phone"></i> +91 9612402046</p>
-                            <p><strong>Joining:</strong> 27th Oct 2006</p>
+        <section class="page-container">
+            <div class="glass-card">
+                <div class="faculty-grid">
+                    <div class="faculty-card">
+                        <div class="faculty-header">
+                            <div class="faculty-img">
+                                <img src="../../images/cse faculty.jpg" alt="Ngilyang Pumbo">
+                            </div>
+                            <div class="faculty-basic-info">
+                                <h3>Ngilyang Pumbo</h3>
+                                <p class="designation">Lecturer (Sel Gr-I) cum HoD (I/c)</p>
+                                <p class="specialization"><strong>Specialization:</strong> Image Processing, Networking,
+                                    AI</p>
+                                <div class="faculty-contact">
+                                    <p><i class="fas fa-envelope"></i> ngspumbo@gmail.com</p>
+                                    <p><i class="fas fa-phone"></i> +91 9612402046</p>
+                                    <p><strong>Joining:</strong> 27th Oct 2006</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="faculty-detail-card">
+                            <div class="faculty-detail-section">
+                                <h4>Educational Qualification</h4>
+                                <div class="table-responsive">
+                                    <table class="faculty-table">
+                                        <thead>
+                                            <tr>
+                                                <th>Degree</th>
+                                                <th>Specialization</th>
+                                                <th>University</th>
+                                                <th>Year</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>Ph D (Pursuing)</td>
+                                                <td>AI & ML</td>
+                                                <td>NIT, Jote</td>
+                                                <td>Since Jan 2024</td>
+                                            </tr>
+                                            <tr>
+                                                <td>M. Tech</td>
+                                                <td>Image Processing</td>
+                                                <td>Assam Downtown</td>
+                                                <td>2020</td>
+                                            </tr>
+                                            <tr>
+                                                <td>BE</td>
+                                                <td>CS & Engg</td>
+                                                <td>Kuvempu</td>
+                                                <td>2003</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+
+                            <div class="faculty-detail-section">
+                                <h4>Teaching-Learning Engagement</h4>
+                                <ul class="faculty-detail-list">
+                                    <li>Introduction to IT Systems (ES-102)</li>
+                                    <li>Programming in C (G-206 A/B)</li>
+                                    <li>Microprocessor (Ex-504)</li>
+                                </ul>
+                            </div>
+
+                            <div class="faculty-detail-section">
+                                <h4>Professional Background</h4>
+                                <div class="table-responsive">
+                                    <table class="faculty-table">
+                                        <thead>
+                                            <tr>
+                                                <th>Designation</th>
+                                                <th>From</th>
+                                                <th>To</th>
+                                                <th>Organization</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>Lecturer</td>
+                                                <td>2006</td>
+                                                <td>2015</td>
+                                                <td>RGGP</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Lecturer (Sr. Scale)</td>
+                                                <td>2015</td>
+                                                <td>2020</td>
+                                                <td>GPC Pasighat</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Lecturer (Sel. Gr-I)</td>
+                                                <td>2020</td>
+                                                <td>Till date</td>
+                                                <td>GPC Pasighat/Ziro</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+
+                            <div class="faculty-detail-section">
+                                <h4>Administrative Experience</h4>
+                                <div class="table-responsive">
+                                    <table class="faculty-table">
+                                        <thead>
+                                            <tr>
+                                                <th>Role</th>
+                                                <th>From</th>
+                                                <th>To</th>
+                                                <th>Organization</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>HOD I/c (CSE)</td>
+                                                <td>2014</td>
+                                                <td>2015</td>
+                                                <td>RGGP, Itanagar</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Principal (I/C)</td>
+                                                <td>2015</td>
+                                                <td>2017</td>
+                                                <td>GPC, Laying</td>
+                                            </tr>
+                                            <tr>
+                                                <td>HOD I/c (CSE)</td>
+                                                <td>2017</td>
+                                                <td>2025</td>
+                                                <td>GPC Pasighat</td>
+                                            </tr>
+                                            <tr>
+                                                <td>IQAC / AICTE Coordinator</td>
+                                                <td>2018</td>
+                                                <td>2025</td>
+                                                <td>GPC, Pasighat</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+
+                            <div class="faculty-detail-section">
+                                <h4>FDP/STTP/STC & Conferences</h4>
+                                <ul class="faculty-detail-list">
+                                    <li>FDP on GEN AI-RAG (2025) - EXCELR/EDL</li>
+                                    <li>FDP on AI & Computer Vision (2025) - C-DAC, Hyderabad</li>
+                                    <li>ICMMRE 2022 Conference - SMIT, Majitar Sikkim</li>
+                                    <li>IC on Academic Excellence through Accreditation (2025) - Dr. K.N Modi University
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="faculty-detail-section">
+                                <h4>Publications</h4>
+                                <p class="publication-text">Gem Taka, N. Pumbo, T. D. Das, “Synthesis and
+                                    Characterization of ZnO, Fe-ZnO & Mg-ZnO Nanoparticles”, AIP Conf. Proc. 2786,
+                                    060002 (2023).
+                                    DOI: 10.1063/5.0145518</p>
+                            </div>
                         </div>
                     </div>
                 </div>
-
-                <div class="faculty-detail-section">
-                    <h4>Educational Qualification</h4>
-                    <table class="faculty-table">
-                        <thead>
-                            <tr>
-                                <th>Degree</th>
-                                <th>Specialization</th>
-                                <th>University</th>
-                                <th>Year</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>Ph D (Pursuing)</td>
-                                <td>AI & ML</td>
-                                <td>NIT, Jote</td>
-                                <td>Since Jan 2024</td>
-                            </tr>
-                            <tr>
-                                <td>M. Tech</td>
-                                <td>Image Processing</td>
-                                <td>Assam Downtown</td>
-                                <td>2020</td>
-                            </tr>
-                            <tr>
-                                <td>BE</td>
-                                <td>CS & Engg</td>
-                                <td>Kuvempu</td>
-                                <td>2003</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-
-                <div class="faculty-detail-section">
-                    <h4>Teaching-Learning Engagement</h4>
-                    <ul class="faculty-detail-list">
-                        <li>Introduction to IT Systems (ES-102)</li>
-                        <li>Programming in C (G-206 A/B)</li>
-                        <li>Microprocessor (Ex-504)</li>
-                    </ul>
-                </div>
-
-                <div class="faculty-detail-section">
-                    <h4>Professional Background</h4>
-                    <table class="faculty-table">
-                        <thead>
-                            <tr>
-                                <th>Designation</th>
-                                <th>From</th>
-                                <th>To</th>
-                                <th>Organization</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>Lecturer</td>
-                                <td>2006</td>
-                                <td>2015</td>
-                                <td>RGGP</td>
-                            </tr>
-                            <tr>
-                                <td>Lecturer (Sr. Scale)</td>
-                                <td>2015</td>
-                                <td>2020</td>
-                                <td>GPC Pasighat</td>
-                            </tr>
-                            <tr>
-                                <td>Lecturer (Sel. Gr-I)</td>
-                                <td>2020</td>
-                                <td>Till date</td>
-                                <td>GPC Pasighat/Ziro</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-
-                <div class="faculty-detail-section">
-                    <h4>Administrative Experience</h4>
-                    <table class="faculty-table">
-                        <thead>
-                            <tr>
-                                <th>Role</th>
-                                <th>From</th>
-                                <th>To</th>
-                                <th>Organization</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>HOD I/c (CSE)</td>
-                                <td>2014</td>
-                                <td>2015</td>
-                                <td>RGGP, Itanagar</td>
-                            </tr>
-                            <tr>
-                                <td>Principal (I/C)</td>
-                                <td>2015</td>
-                                <td>2017</td>
-                                <td>GPC, Laying</td>
-                            </tr>
-                            <tr>
-                                <td>HOD I/c (CSE)</td>
-                                <td>2017</td>
-                                <td>2025</td>
-                                <td>GPC Pasighat</td>
-                            </tr>
-                            <tr>
-                                <td>IQAC / AICTE Coordinator</td>
-                                <td>2018</td>
-                                <td>2025</td>
-                                <td>GPC, Pasighat</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-
-                <div class="faculty-detail-section">
-                    <h4>FDP/STTP/STC & Conferences</h4>
-                    <ul class="faculty-detail-list">
-                        <li>FDP on GEN AI-RAG (2025) - EXCELR/EDL</li>
-                        <li>FDP on AI & Computer Vision (2025) - C-DAC, Hyderabad</li>
-                        <li>ICMMRE 2022 Conference - SMIT, Majitar Sikkim</li>
-                        <li>IC on Academic Excellence through Accreditation (2025) - Dr. K.N Modi University</li>
-                    </ul>
-                </div>
-
-                <div class="faculty-detail-section">
-                    <h4>Publications</h4>
-                    <p style="font-size: 0.9rem; color: #444;">Gem Taka, N. Pumbo, T. D. Das, “Synthesis and
-                        Characterization of ZnO, Fe-ZnO & Mg-ZnO Nanoparticles”, AIP Conf. Proc. 2786, 060002 (2023).
-                        DOI: 10.1063/5.0145518</p>
-                </div>
             </div>
-        </div>
+        </section>
     </main>
 
     <footer>

@@ -1,119 +1,229 @@
-/* Reusing faculty styling */
+/* CSS for Civil Engineering Faculties Page */
+
+/* Glass Card */
+.glass-card {
+    background: rgba(255, 255, 255, 0.65);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.15);
+    border-radius: 24px;
+    padding: 3rem;
+    margin-bottom: 2rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.glass-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 40px 0 rgba(31, 38, 135, 0.2);
+}
+
+/* Department Hedaer */
+.dept-header {
+    text-align: center;
+    margin-bottom: 3rem;
+    position: relative;
+}
+
+.dept-header h2 {
+    color: var(--primary-color);
+    font-size: 2.5rem;
+    font-weight: 800;
+    margin-bottom: 0.5rem;
+    background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: inline-block;
+}
+
+.dept-header p {
+    color: var(--text-color);
+    font-size: 1.2rem;
+    opacity: 0.8;
+}
+
+/* Faculty Grid */
 .faculty-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
-    gap: 40px;
-    padding: 20px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
 }
 
+/* Faculty Card */
 .faculty-card {
-    background: #fff;
-    border-radius: 12px;
-    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.06);
-    overflow: hidden;
-    padding: 30px;
-    border-top: 5px solid #1a4a8e;
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 20px;
+    padding: 2.5rem;
+    border: 1px solid rgba(255, 255, 255, 0.6);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
+.faculty-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+    background: rgba(255, 255, 255, 0.7);
+}
+
+/* Faculty Header */
 .faculty-header {
     display: flex;
-    gap: 25px;
-    margin-bottom: 25px;
+    gap: 2.5rem;
+    margin-bottom: 2.5rem;
+    align-items: center;
 }
 
 .faculty-img {
-    width: 130px;
-    height: 160px;
-    background: #f0f0f0;
-    border-radius: 8px;
+    flex-shrink: 0;
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
     overflow: hidden;
-    border: 1px solid #ddd;
+    border: 4px solid white;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
 }
 
 .faculty-img img {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    display: block;
+    transition: transform 0.5s ease;
+}
+
+.faculty-card:hover .faculty-img img {
+    transform: scale(1.1);
 }
 
 .faculty-basic-info h3 {
-    color: #1a4a8e;
-    font-size: 1.6rem;
-    margin-bottom: 5px;
+    color: var(--primary-color);
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
 }
 
-.faculty-basic-info .designation {
-    color: #666;
+.designation {
+    color: var(--accent-color);
     font-weight: 600;
-    margin-bottom: 12px;
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+    display: inline-block;
+    padding: 0.4rem 1rem;
+    background: rgba(229, 9, 20, 0.1);
+    border-radius: 50px;
 }
 
-.faculty-contact {
-    font-size: 0.9rem;
-    color: #555;
+.faculty-contact p {
+    margin-bottom: 0.8rem;
+    color: var(--text-color);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 1rem;
 }
 
+.faculty-contact i {
+    color: var(--primary-color);
+    width: 20px;
+    text-align: center;
+}
+
+/* Faculty Details */
 .faculty-detail-section {
-    margin-top: 25px;
+    margin-bottom: 2rem;
+}
+
+.faculty-detail-section:last-child {
+    margin-bottom: 0;
 }
 
 .faculty-detail-section h4 {
-    color: #1a4a8e;
-    border-bottom: 2px solid #f0f0f0;
-    padding-bottom: 8px;
-    margin-bottom: 15px;
-    font-size: 1.1rem;
+    color: var(--primary-color);
+    font-size: 1.2rem;
+    border-bottom: 2px solid rgba(26, 74, 142, 0.1);
+    padding-bottom: 0.8rem;
+    margin-bottom: 1.5rem;
+    font-weight: 700;
 }
 
+/* Table Styles */
 .faculty-table {
     width: 100%;
-    border-collapse: collapse;
-    font-size: 0.85rem;
+    border-collapse: separate;
+    border-spacing: 0;
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.02);
 }
 
 .faculty-table th,
 .faculty-table td {
-    border: 1px solid #eee;
-    padding: 10px;
+    padding: 1rem 1.5rem;
     text-align: left;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
 }
 
 .faculty-table th {
-    background: #f8f9fa;
-    color: #1a4a8e;
+    background: rgba(26, 74, 142, 0.05);
+    color: var(--primary-color);
     font-weight: 700;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    letter-spacing: 0.5px;
 }
 
+.faculty-table tr:last-child td {
+    border-bottom: none;
+}
+
+.faculty-table tr:hover {
+    background: rgba(255, 255, 255, 0.8);
+}
+
+/* List Styles */
 .faculty-detail-list {
     list-style: none;
-    padding-left: 0;
+    padding: 0;
 }
 
 .faculty-detail-list li {
-    font-size: 0.9rem;
-    color: #444;
-    margin-bottom: 10px;
-    padding-left: 20px;
     position: relative;
-    line-height: 1.5;
+    padding-left: 25px;
+    margin-bottom: 12px;
+    line-height: 1.6;
+    color: var(--text-color);
 }
 
 .faculty-detail-list li::before {
-    content: "\f058";
+    content: "\f054";
+    /* FontAwesome chevron-right */
     font-family: "Font Awesome 6 Free";
-    font-weight: 400;
+    font-weight: 900;
+    color: var(--accent-color);
     position: absolute;
     left: 0;
-    color: #1a4a8e;
+    top: 2px;
     font-size: 0.8rem;
-    top: 3px;
 }
 
-@media (max-width: 600px) {
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .glass-card {
+        padding: 1.5rem;
+    }
+
     .faculty-header {
         flex-direction: column;
-        align-items: center;
         text-align: center;
+        gap: 1.5rem;
+    }
+
+    .faculty-contact p {
+        justify-content: center;
+    }
+
+    .faculty-table {
+        display: block;
+        overflow-x: auto;
     }
 }

@@ -1,33 +1,37 @@
-/* Reusing and slightly adjusting faculty styling */
+/* CE Faculties CSS */
+
 .faculty-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+    grid-template-columns: 1fr;
     gap: 40px;
     padding: 20px 0;
 }
 
 .faculty-card {
-    background: #fff;
+    background: rgba(255, 255, 255, 0.4);
+    border: 1px solid rgba(255, 255, 255, 0.4);
     border-radius: 12px;
-    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.06);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
     overflow: hidden;
     padding: 30px;
-    border-top: 5px solid #1a4a8e;
 }
 
 .faculty-header {
     display: flex;
-    gap: 25px;
-    margin-bottom: 25px;
+    gap: 30px;
+    margin-bottom: 30px;
+    align-items: flex-start;
 }
 
 .faculty-img {
-    width: 140px;
-    height: 180px;
-    background: #f0f0f0;
-    border-radius: 8px;
+    width: 160px;
+    height: 200px;
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 10px;
     overflow: hidden;
-    border: 1px solid #ddd;
+    border: 1px solid rgba(255, 255, 255, 0.6);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    flex-shrink: 0;
 }
 
 .faculty-img img {
@@ -36,92 +40,138 @@
     object-fit: cover;
 }
 
+.faculty-basic-info {
+    flex: 1;
+}
+
 .faculty-basic-info h3 {
-    color: #1a4a8e;
-    font-size: 1.6rem;
-    margin-bottom: 5px;
+    color: var(--primary-color);
+    font-size: 1.8rem;
+    margin-bottom: 8px;
+    font-weight: 700;
 }
 
 .faculty-basic-info .designation {
-    color: #666;
+    color: var(--secondary-color);
     font-weight: 600;
     margin-bottom: 12px;
+    font-size: 1.1rem;
 }
 
 .faculty-contact {
-    font-size: 0.9rem;
-    color: #555;
-    background: #f8fafc;
-    padding: 15px;
-    border-radius: 8px;
+    font-size: 0.95rem;
+    color: #444;
+    background: rgba(255, 255, 255, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    margin-top: 15px;
 }
 
 .faculty-contact p {
-    margin-bottom: 5px;
+    margin-bottom: 8px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.faculty-contact i {
+    width: 20px;
+    color: var(--primary-color);
+    text-align: center;
 }
 
 .faculty-detail-section {
-    margin-top: 30px;
+    margin-top: 35px;
 }
 
 .faculty-detail-section h4 {
-    color: #1a4a8e;
-    border-bottom: 2px solid #f0f0f0;
-    padding-bottom: 8px;
-    margin-bottom: 15px;
-    font-size: 1.1rem;
+    color: var(--primary-color);
+    border-bottom: 2px solid rgba(0, 0, 0, 0.05);
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    font-size: 1.2rem;
+    font-weight: 600;
     text-transform: uppercase;
     letter-spacing: 0.5px;
 }
 
 .faculty-table {
     width: 100%;
-    border-collapse: collapse;
-    font-size: 0.85rem;
+    border-collapse: separate;
+    border-spacing: 0;
+    font-size: 0.95rem;
     margin-bottom: 25px;
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 10px;
+    overflow: hidden;
+    border: 1px solid rgba(255, 255, 255, 0.4);
 }
 
 .faculty-table th,
 .faculty-table td {
-    border: 1px solid #eee;
-    padding: 12px;
+    padding: 15px 20px;
     text-align: left;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
 }
 
 .faculty-table th {
-    background: #f8f9fa;
-    color: #333;
-    font-weight: 700;
+    background: rgba(26, 74, 142, 0.05);
+    color: var(--primary-color);
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 0.85rem;
 }
 
-.experience-list {
+.faculty-table tr:last-child td {
+    border-bottom: none;
+}
+
+.faculty-table tr:hover {
+    background: rgba(255, 255, 255, 0.5);
+}
+
+.faculty-detail-list {
     list-style: none;
     padding-left: 0;
 }
 
-.experience-list li {
-    font-size: 0.9rem;
+.faculty-detail-list li {
+    font-size: 0.95rem;
     color: #444;
     margin-bottom: 12px;
-    padding-left: 20px;
+    padding-left: 25px;
     position: relative;
-    line-height: 1.5;
+    line-height: 1.6;
 }
 
-.experience-list li::before {
-    content: "\f0b1";
+.faculty-detail-list li::before {
+    content: "\f054";
     font-family: "Font Awesome 6 Free";
     font-weight: 900;
     position: absolute;
     left: 0;
-    color: #1a4a8e;
+    top: 2px;
+    color: var(--secondary-color);
     font-size: 0.8rem;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 768px) {
     .faculty-header {
         flex-direction: column;
-        align-items: center;
         text-align: center;
+        align-items: center;
+    }
+
+    .faculty-contact {
+        text-align: left;
+    }
+
+    .faculty-contact p {
+        justify-content: center;
+    }
+
+    .table-responsive {
+        overflow-x: auto;
     }
 }
